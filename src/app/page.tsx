@@ -1,3 +1,6 @@
+import CallToAction from "@/components/CallToAction";
+import FAQ from "@/components/Faq";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import ShipmentJourney from "@/components/ShipmentJourney";
@@ -12,6 +15,9 @@ export default function Home() {
       <ShipmentJourney />
       <WhyChooseUs />
       <Testimonials />
+      <FAQ />
+      <CallToAction />
+      <Footer />
     </main>
   );
 }
