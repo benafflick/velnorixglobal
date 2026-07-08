@@ -33,7 +33,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-[700px] bg-cover bg-center bg-no-repeat"
+      className="relative min-h-[700px] bg-cover bg-center bg-no-repeat px-6 md:px-16 lg:px-24 pt-32 md:pt-20 pb-20"
       style={{
         backgroundImage: "url('/images/hero-bg.jpg')",
       }}

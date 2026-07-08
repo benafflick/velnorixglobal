@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -7,13 +8,34 @@ export default function Footer() {
         <div className="grid gap-16 md:grid-cols-3">
           {/* Company Info */}
           <div>
-            <h2 className="text-3xl font-bold text-white">VelnorixGlobal</h2>
+            <Link href="/" className="inline-flex items-center gap-4">
+              <Image
+                src="/images/logo.png"
+                alt="VelnorixGlobal Logo"
+                width={60}
+                height={60}
+                priority
+                className="object-contain"
+              />
+
+              <div>
+                <h2 className="text-3xl font-bold text-white">
+                  VelnorixGlobal
+                </h2>
+
+                <p className="text-sm text-slate-400">
+                  Global Logistics & Freight Solutions
+                </p>
+              </div>
+            </Link>
 
             <p className="mt-6 leading-8 text-slate-400">
               Since 2000, VelnorixGlobal has delivered trusted logistics
-              solutions across the globe. From express delivery to international
-              freight forwarding, we remain committed to speed, security and
-              reliability.
+              solutions across the globe. From express delivery and air freight
+              to ocean cargo, warehousing, customs clearance, and supply chain
+              management, we remain committed to providing secure, efficient,
+              and reliable transportation services for businesses and
+              individuals worldwide.
             </p>
           </div>
 
@@ -66,9 +88,13 @@ export default function Footer() {
 
               <li className="transition hover:text-white">Air Freight</li>
 
+              <li className="transition hover:text-white">Ocean Freight</li>
+
               <li className="transition hover:text-white">
                 Warehousing & Distribution
               </li>
+
+              <li className="transition hover:text-white">Customs Clearance</li>
 
               <li className="transition hover:text-white">
                 Supply Chain Solutions
@@ -84,7 +110,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-5 text-sm text-slate-500 md:flex-row">
           <p>© 2000–2026 VelnorixGlobal. All rights reserved.</p>
 
-          <div className="flex items-center gap-8">
+          <div className="flex flex-wrap items-center justify-center gap-8">
             <Link href="/terms" className="transition hover:text-white">
               Terms & Conditions
             </Link>

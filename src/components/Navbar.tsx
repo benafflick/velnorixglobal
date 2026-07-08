@@ -1,12 +1,19 @@
+import Image from "next/image";
+
 export default function Navbar() {
   return (
-    <header className="w-full border-b border-gray-200 bg-white">
+    <header className="w-full fixed top-0 z-20 bg-white/90 backdrop-blur-sm shadow-sm">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
         {/* Logo */}
         <a href="/" className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-md bg-[#1E3A8A] text-lg font-bold text-white">
-            V
-          </div>
+          <Image
+            src="/images/logo.png"
+            alt="VGX Logistics Logo"
+            width={44}
+            height={44}
+            className="rounded-md object-contain"
+            priority
+          />
 
           <div>
             <h1 className="text-xl font-bold tracking-tight text-gray-900">

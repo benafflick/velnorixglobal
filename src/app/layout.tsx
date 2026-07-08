@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Trackly",
-  description: "Track packages worldwide",
+  title: "VelnorixGlobal Logistics | Global Shipping & Freight Solutions",
+  description:
+    "VGX Logistics provides reliable air freight, ocean freight, road transport, warehousing, customs clearance, and real-time shipment tracking worldwide.",
 };
 
 export default function RootLayout({
@@ -27,7 +30,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-slate-900`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
