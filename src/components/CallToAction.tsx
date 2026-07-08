@@ -37,10 +37,10 @@ export default function CallToAction() {
               />
             </button>
 
-            <button className="group flex items-center gap-3 rounded-xl border border-white px-8 py-4 font-semibold text-white transition duration-300 hover:bg-white hover:text-[#1E3A8A]">
+            {/* <button className="group flex items-center gap-3 rounded-xl border border-white px-8 py-4 font-semibold text-white transition duration-300 hover:bg-white hover:text-[#1E3A8A]">
               <Phone size={20} />
               Contact Support
-            </button>
+            </button> */}
           </div>
 
           {/* Bottom Trust Bar */}

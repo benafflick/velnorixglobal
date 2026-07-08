@@ -1,41 +1,41 @@
 [
   {
-    "trackingNumber": "VGX384729105US",
+    "trackingNumber": "VGX384730005US",
     "senderName": "Apple Inc.",
     "senderAddress": "One Apple Park Way, Cupertino, CA",
 
-    "receiverName": "John Smith",
-    "receiverAddress": "221 Baker Street, London, United Kingdom",
+    "receiverName": "Terry R Hurley",
+    "receiverAddress": "3560 S Oxford drive, San Angelo, TX 76904",
 
-    "origin": "California, USA",
-    "destination": "London, United Kingdom",
+    "origin": "Colorado, USA",
+    "destination": "Texas, USA",
 
-    "currentLocation": "Chicago Distribution Center",
+    "currentLocation": "Colorado Distribution Center",
 
     "weight": "12.5 kg",
     "service": "Express Delivery",
 
-    "status": "In Transit",
+    "status": "Processing",
 
-    "estimatedDelivery": "July 15, 2026",
+    "estimatedDelivery": "July 16, 2026",
 
     "history": [
       {
-        "location": "California, USA",
+        "location": "Colorado, USA",
         "status": "Collected",
         "description": "Shipment collected from sender.",
-        "date": "July 8, 2026 • 09:30 AM"
+        "date": "July 9, 2026 • 09:30 AM"
       },
       {
-        "location": "Nevada Sorting Facility",
+        "location": "Colorado Sorting Facility",
         "status": "Processing",
         "description": "Shipment processed at sorting facility.",
-        "date": "July 8, 2026 • 06:15 PM"
+        "date": "July 9, 2026 • 06:15 PM"
       },
       {
-        "location": "Chicago Distribution Center",
-        "status": "In Transit",
-        "description": "Shipment departed regional distribution center.",
+        "location": "Colorado Distribution Center",
+        "status": "Processing",
+        "description": "Shipment is being processed at distribution center.",
         "date": "July 9, 2026 • 10:10 AM"
       }
     ]

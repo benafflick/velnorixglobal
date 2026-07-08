@@ -65,7 +65,7 @@ export default function TrackingStats({
           <Clock3 size={28} />
         </div>
 
-        <h2 className="mt-6 text-4xl font-black text-slate-900">12</h2>
+        <h2 className="mt-6 text-4xl font-black text-slate-900">7</h2>
 
         <p className="mt-2 text-lg font-semibold text-slate-800">
           Transit Days

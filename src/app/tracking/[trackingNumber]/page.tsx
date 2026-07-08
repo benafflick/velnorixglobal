@@ -8,7 +8,7 @@ import TrackingProgress from "@/components/tracking/TrackingProgress";
 import ShipmentDetails from "@/components/tracking/ShipmentDetails";
 import RouteVisualization from "@/components/tracking/RouteVisualization";
 import TrackingTimeline from "@/components/tracking/TrackingTimeline";
-import SupportCard from "@/components/tracking/SupportCard";
+// import SupportCard from "@/components/tracking/SupportCard";
 
 interface Props {
   params: Promise<{
@@ -74,12 +74,9 @@ export default async function TrackingPage({ params }: Props) {
           destination={shipment.destination}
         />
 
-        <TrackingTimeline
-          history={history}
-          currentStatus={shipment.status}
-        />
+        <TrackingTimeline history={history} currentStatus={shipment.status} />
 
-        <SupportCard />
+        {/* <SupportCard /> */}
       </div>
     </main>
   );
