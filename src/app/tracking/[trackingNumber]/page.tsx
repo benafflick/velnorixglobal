@@ -75,7 +75,7 @@ export default async function TrackingPage({ params }: Props) {
         />
 
         <TrackingTimeline
-          history={shipment.history}
+          history={history}
           currentStatus={shipment.status}
         />
 
