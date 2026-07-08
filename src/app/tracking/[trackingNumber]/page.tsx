@@ -44,15 +44,6 @@ export default async function TrackingPage({ params }: Props) {
           destination={shipment.destination}
           estimatedDelivery={shipment.estimatedDelivery}
         />
-
-        <TrackingStats
-          status={shipment.status}
-          history={history}
-          estimatedDelivery={shipment.estimatedDelivery}
-        />
-
-        <TrackingProgress status={shipment.status} />
-
         <ShipmentDetails
           shipment={{
             senderName: shipment.senderName,
@@ -67,6 +58,13 @@ export default async function TrackingPage({ params }: Props) {
             status: shipment.status,
           }}
         />
+        <TrackingStats
+          status={shipment.status}
+          history={history}
+          estimatedDelivery={shipment.estimatedDelivery}
+        />
+
+        <TrackingProgress status={shipment.status} />
 
         <RouteVisualization
           origin={shipment.origin}
