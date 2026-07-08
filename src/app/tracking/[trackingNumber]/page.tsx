@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getShipment } from "@/lib/tracking";
 
 import TrackingHeader from "@/components/tracking/TrackingHeader";
+import TrackingStats from "@/components/tracking/TrackingStats";
 import TrackingProgress from "@/components/tracking/TrackingProgress";
 import ShipmentDetails from "@/components/tracking/ShipmentDetails";
 import RouteVisualization from "@/components/tracking/RouteVisualization";
@@ -24,6 +25,15 @@ export default async function TrackingPage({ params }: Props) {
     notFound();
   }
 
+  const history = shipment.history.map((event) => ({
+    ...event,
+    createdAt:
+      (event as any).createdAt ??
+      (event as any).timestamp ??
+      (event as any).date ??
+      new Date().toISOString(),
+  }));
+
   return (
     <main className="min-h-screen bg-slate-100 py-12">
       <div className="mx-auto max-w-7xl space-y-10 px-6">
@@ -32,6 +42,12 @@ export default async function TrackingPage({ params }: Props) {
           status={shipment.status}
           origin={shipment.origin}
           destination={shipment.destination}
+          estimatedDelivery={shipment.estimatedDelivery}
+        />
+
+        <TrackingStats
+          status={shipment.status}
+          history={history}
           estimatedDelivery={shipment.estimatedDelivery}
         />
 
