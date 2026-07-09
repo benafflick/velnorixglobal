@@ -15,7 +15,7 @@
     "weight": "4.5 kg",
     "service": "Parcel Delivery",
 
-    "status": "Processing",
+    "status": "In Transit",
 
     "estimatedDelivery": "July 16, 2026",
 
@@ -28,14 +28,14 @@
       },
       {
         "location": "Colorado Sorting Facility",
-        "status": "Processing",
+        "status": "In Transit",
         "description": "Shipment processed at sorting facility.",
         "date": "July 9, 2026 • 06:15 PM"
       },
       {
         "location": "Colorado Distribution Center",
-        "status": "Processing",
-        "description": "Shipment is being processed at distribution center.",
+        "status": "In Transit",
+        "description": "Shipment is in transit to destination.",
         "date": "July 9, 2026 • 10:10 AM"
       }
     ]
