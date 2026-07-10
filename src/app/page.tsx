@@ -1,6 +1,7 @@
 import CallToAction from "@/components/CallToAction";
 import FAQ from "@/components/Faq";
-
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 
 import ShipmentJourney from "@/components/ShipmentJourney";
@@ -10,12 +11,14 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 export default function Home() {
   return (
     <main>
+      <Navbar />
       <Hero />
       <ShipmentJourney />
       <WhyChooseUs />
       <Testimonials />
       <FAQ />
       <CallToAction />
+      <Footer />
     </main>
   );
 }

@@ -14,7 +14,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
       <Sidebar />
 
       {/* Main Content */}
-      <div className="ml-72 mt-20 flex min-h-screen flex-col">
+      <div className="ml-72 flex min-h-screen flex-col">
         {/* Top Navigation */}
         <Topbar />
 
