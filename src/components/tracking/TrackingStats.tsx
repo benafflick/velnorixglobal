@@ -28,7 +28,7 @@ export default function TrackingStats({
   const progressMap: Record<string, number> = {
     Collected: 15,
     Processing: 35,
-    "In Transit": 65,
+    "In Transit": 50,
     "Customs Clearance": 80,
     "Out for Delivery": 95,
     Delivered: 100,
