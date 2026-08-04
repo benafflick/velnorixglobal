@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import type { ReactNode } from "react";
 
 import Sidebar from "@/components/admin/Sidebar";
@@ -8,18 +11,20 @@ interface AdminLayoutProps {
 }
 
 export default function AdminLayout({ children }: AdminLayoutProps) {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-slate-100">
       {/* Sidebar */}
-      <Sidebar />
+      <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
-      {/* Main Content */}
-      <div className="ml-72 flex min-h-screen flex-col">
-        {/* Top Navigation */}
-        <Topbar />
+      {/* Main */}
+      <div className="lg:ml-72">
+        <Topbar onMenuClick={() => setSidebarOpen(true)} />
 
-        {/* Page Content */}
-        <main className="flex-1 relative top-0 p-8">{children}</main>
+        <main className="min-h-[calc(100vh-80px)] p-4 sm:p-6 lg:p-8">
+          {children}
+        </main>
       </div>
     </div>
   );
