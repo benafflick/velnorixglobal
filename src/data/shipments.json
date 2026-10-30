@@ -1,42 +1,42 @@
 [
   {
-    "trackingNumber": "VGX384730005US",
+    "trackingNumber": "VGX384733455US",
     "senderName": "FGG Program Inc.",
     "senderAddress": "USA",
 
     "receiverName": "Terry R Hurley",
     "receiverAddress": "3560 S Oxford drive, San Angelo, TX 76904",
 
-    "origin": "Colorado, USA",
-    "destination": "Texas, USA",
+    "origin": "nil",
+    "destination": "nil",
 
-    "currentLocation": "Colorado Distribution Center",
+    "currentLocation": "nil",
 
-    "weight": "12.5 kg",
-    "service": "Parcel Delivery",
+    "weight": "nil",
+    "service": "nil",
 
-    "status": "Customs Clearance",
+    "status": "nil",
 
     "estimatedDelivery": "July 16, 2026",
 
     "history": [
       {
-        "location": "Colorado, USA",
-        "status": "Collected",
-        "description": "Shipment collected from sender.",
-        "date": "July 9, 2026 • 09:30 AM"
+        "location": "nil",
+        "status": "nil",
+        "description": "nil",
+        "date": "nil"
       },
       {
-        "location": "Colorado Sorting Facility",
-        "status": "In Transit",
-        "description": "Shipment processed at sorting facility.",
-        "date": "July 9, 2026 • 06:15 PM"
+        "location": "nil",
+        "status": "nil",
+        "description": "nil",
+        "date": "nil"
       },
       {
-        "location": "Colorado Distribution Center",
-        "status": "In Transit",
-        "description": "Shipment is in transit to destination.",
-        "date": "July 9, 2026 • 10:10 AM"
+        "location": "nil",
+        "status": "nil",
+        "description": "nil",
+        "date": "nil"
       }
     ]
   }
